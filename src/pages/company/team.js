@@ -6,7 +6,7 @@ const Team = () => (
   <Layout>
     <div>
       <h1>The Team</h1>
-      <p>This is the about me page</p>
+      <p>This is the team page</p>
     </div>
   </Layout>
 )
