@@ -16,6 +16,9 @@ const Layout = ({ children }) => (
             description
           }
         }
+        site {
+          buildTime
+        }
       }
     `}
     render={data => (
