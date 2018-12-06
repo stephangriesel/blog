@@ -17,10 +17,15 @@ const Archive = () => (
         }
       }
     `}
-    render={data => (
+    render={({allMarkdownRemark}) => (
       <>
       <aside>
           <h3>Archive</h3>
+          {allMarkdownRemark.edges.map(edge => (
+              <li>
+                  {edge.node.frontmatter.title}
+              </li>
+          ))}
       </aside>
       </>
     )}
