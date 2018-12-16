@@ -5,8 +5,9 @@ import styled from 'styled-components'
 import logo from '../images/s.png'
 
 const HeaderWrapper = styled.div`
-  background: #818999;
-  margin-bottom: 1.45rem;
+  background: #FFF;
+  border-bottom: 2px solid #000;
+  border-top: 1px solid #000;
   img {
     margin-bottom:0;
   }
