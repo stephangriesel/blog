@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: 'Stephan\'s Blog',
-    description: 'Stephan\'s Blog'
+    description: 'Stephan\'s Blog',
+    siteUrl: 'https://blog.stephangriesel.com',
   },
   plugins: [
     'gatsby-plugin-react-helmet',
+    'gatsby-plugin-sitemap',
     'gatsby-plugin-styled-components',
     {
       resolve: `gatsby-source-filesystem`,
@@ -46,6 +48,7 @@ module.exports = {
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.app/offline
     // 'gatsby-plugin-offline',
+    'gatsby-plugin-netlify-cms',
     'gatsby-plugin-netlify',
   ],
 }
