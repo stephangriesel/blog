@@ -56,8 +56,8 @@ const Layout = ({ children, location }) => (
         </Helmet>
         <Header siteTitle={data.site.siteMetadata.title} />
         <Spring 
-        from={{height: location.pathname === '/' ? 100 : 380 }}
-        to={{height: location.pathname === '/' ? 380 : 130 }}
+        from={{height: location.pathname === '/' ? 200 : 380 }}
+        to={{height: location.pathname === '/' ? 480 : 230 }}
         >
           {styles => (
             <div style={{overflow:'hidden', ...styles}}>
