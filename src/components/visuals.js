@@ -2,11 +2,11 @@ import React from "react"
 import { StaticQuery, graphql } from "gatsby"
 import Lightbox from "./lightbox"
 
-const Images = () => (
+const Visuals = () => (
   <StaticQuery
     query={graphql`
       query {
-        allImages: allFile(filter: { sourceInstanceName: { eq: "images" } }) {
+        visualImages: allFile(filter: { sourceInstanceName: { eq: "visuals" } }) {
           edges {
             node {
               childImageSharp {
@@ -19,7 +19,7 @@ const Images = () => (
         }
       }
     `}
-    render={data => <Lightbox allImages={data.allImages.edges} />}
+    render={data => <Lightbox visualImages={data.visualImages.edges} />}
   />
 )
-export default Images
+export default Visuals

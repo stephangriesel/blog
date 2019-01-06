@@ -9,6 +9,7 @@ import { StaticQuery, graphql } from 'gatsby'
 import Header from './header'
 import Archive from './archive'
 import './layout.css'
+import Visuals from './visuals';
 
 const MainLayout = styled.main`
   max-width: 90%;
@@ -65,12 +66,14 @@ const Layout = ({ children, location }) => (
             </div>
           )}
         </Spring>
+       
         {/* {location.pathname === '/' && (
           
         )} */}
         <MainLayout>
           <div>{children}</div>
           <Archive />
+          
         </MainLayout>
       </>
     )}
