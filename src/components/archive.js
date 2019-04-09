@@ -5,7 +5,7 @@ import { StaticQuery, graphql, Link } from 'gatsby'
 const POST_ARCHIVE_QUERY = graphql`
   query BlogPostArchive {
     allMarkdownRemark(
-      limit: 5
+      limit: 15
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {

@@ -5,7 +5,7 @@ import { Link, StaticQuery, graphql } from 'gatsby'
 const LISTING_QUERY = graphql`
   query BlogPostListing {
     allMarkdownRemark(
-      limit: 10
+      limit: 15
       sort: { order: DESC, fields: [frontmatter___date] }
     ) {
       edges {
